@@ -16,3 +16,12 @@ cp JW94* /work/ahl28/er
 cp JW97* /work/ahl28/er
 cp JW98* /work/ahl28/er 
 cp JW96* /work/ahl28/er
+cp JW99* /work/ahl28/er
+
+cd /datacommons/willislab/SequencingRun_May2022/Oneal_7628_220426A7
+
+cp F2_* /work/ahl28/er
+cp S1_* /work/ahl28/er
+cp C1_* /work/ahl28/er
+cp C2_* /work/ahl28/er
+cp S2_* /work/ahl28/er 
