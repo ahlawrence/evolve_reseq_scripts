@@ -25,3 +25,43 @@ cp S1_* /work/ahl28/er
 cp C1_* /work/ahl28/er
 cp C2_* /work/ahl28/er
 cp S2_* /work/ahl28/er 
+
+
+
+
+######Rename###########
+mv	JW99_S9_L004_R1_001.fastq.gz	sample_99.R1.fastq.gz	
+mv	JW98_S8_L004_R1_001.fastq.gz	sample_98.R1.fastq.gz	
+mv	JW97_S7_L004_R1_001.fastq.gz	sample_97.R1.fastq.gz	
+mv	JW96_S6_L004_R1_001.fastq.gz	sample_96.R1.fastq.gz	
+mv	JW94_S4_L004_R1_001.fastq.gz	sample_94.R1.fastq.gz	
+mv	JW93_S3_L004_R1_001.fastq.gz	sample_93.R1.fastq.gz	
+mv	JW92_S2_L004_R1_001.fastq.gz	sample_92.R1.fastq.gz	
+mv	JW91_S1_L004_R1_001.fastq.gz	sample_91.R1.fastq.gz	
+mv	S2_S150_L003_R1_001.fastq.gz	sample_57.R1.fastq.gz	
+mv	C2_S149_L003_R1_001.fastq.gz	sample_56.R1.fastq.gz	
+mv	C1_S140_L003_R1_001.fastq.gz	sample_47.R1.fastq.gz	
+mv	S1_S139_L003_R1_001.fastq.gz	sample_46.R1.fastq.gz	
+mv	F2_S138_L003_R1_001.fastq.gz	sample_45.R1.fastq.gz	
+mv	JW130_S106_L005_R1_001.fastq.gz	sample_130.R1.fastq.gz	
+mv	JW129_S105_L005_R1_001.fastq.gz	sample_129.R1.fastq.gz	
+mv	JW128_S104_L005_R1_001.fastq.gz	sample_128.R1.fastq.gz	
+mv	JW127_S103_L005_R1_001.fastq.gz	sample_127.R1.fastq.gz	
+
+mv	JW99_S9_L004_R2_001.fastq.gz	sample_99.R2.fastq.gz	
+mv	JW98_S8_L004_R2_001.fastq.gz	sample_98.R2.fastq.gz	
+mv	JW97_S7_L004_R2_001.fastq.gz	sample_97.R2.fastq.gz	
+mv	JW96_S6_L004_R2_001.fastq.gz	sample_96.R2.fastq.gz	
+mv	JW94_S4_L004_R2_001.fastq.gz	sample_94.R2.fastq.gz	
+mv	JW93_S3_L004_R2_001.fastq.gz	sample_93.R2.fastq.gz	
+mv	JW92_S2_L004_R2_001.fastq.gz	sample_92.R2.fastq.gz	
+mv	JW91_S1_L004_R2_001.fastq.gz	sample_91.R2.fastq.gz	
+mv	S2_S150_L003_R2_001.fastq.gz	sample_57.R2.fastq.gz	
+mv	C2_S149_L003_R2_001.fastq.gz	sample_56.R2.fastq.gz	
+mv	C1_S140_L003_R2_001.fastq.gz	sample_47.R2.fastq.gz	
+mv	S1_S139_L003_R2_001.fastq.gz	sample_46.R2.fastq.gz	
+mv	F2_S138_L003_R2_001.fastq.gz	sample_45.R2.fastq.gz	
+mv	JW130_S106_L005_R2_001.fastq.gz	sample_130.R2.fastq.gz	
+mv	JW129_S105_L005_R2_001.fastq.gz	sample_129.R2.fastq.gz	
+mv	JW128_S104_L005_R2_001.fastq.gz	sample_128.R2.fastq.gz	
+mv	JW127_S103_L005_R2_001.fastq.gz	sample_127.R2.fastq.gz	
