@@ -6,7 +6,7 @@
 #SBATCH -J er_array              # Job name
 #SBATCH -n 8                     # Number of cores
 #SBATCH -N 1                     #Ensure that all cores are on one machine
-#SBATCH --mem 10GB               # Memory in MB
+#SBATCH --mem 40GB               # Memory in MB
 #SBATCH -o er_%A_%a.out   # File for STDOUT (with jobid = %j)
 #SBATCH -e er_%A_%a.err	 # File for STDERR (with jobid = %j)
 #SBATCH --mail-type=END,FAIL          # Type of email notification: BEGIN,END,FAIL,A$
