@@ -17,6 +17,7 @@
 
 genome="/datacommons/willislab/Mguttatus_genome_5/MguttatusTOL_551_v5.0.fa"
 path_to_picard="picard.jar"
+temp="/work/ahl28/temp"
 module load samtools
 
 #copy over TruSeq.fa from datacommons
