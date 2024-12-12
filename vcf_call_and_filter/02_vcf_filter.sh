@@ -1,5 +1,5 @@
-name=“”
-out_name=“”
+name=''
+out_name=''
 gunzip Chr_1.$name.vcf.gz
 cat Chr_1.$name.vcf > ${out_name}.vcf
 
