@@ -42,7 +42,7 @@ java -Xmx2g -jar $path_to_picard BuildBamIndex INPUT=sample_${SLURM_ARRAY_TASK_I
 java -Xmx14g -jar $path_to_picard FixMateInformation INPUT=sample_${SLURM_ARRAY_TASK_ID}.sort.bam OUTPUT=sample_${SLURM_ARRAY_TASK_ID}.FM.bam SORT_ORDER=coordinate TMP_DIR=$temp VALIDATION_STRINGENCY=LENIENT
 
 #Mark Duplicates 
-java -Xmx14g -jar $path_to_picard MarkDuplicates INPUT=sample_${SLURM_ARRAY_TASK_ID}.FM.bam OUTPUT=sample_${SLURM_ARRAY_TASK_ID}.MD.bam M=sample_${SLURM_ARRAY_TASK_ID}.metrics_file VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true
+java -Xmx14g -jar $path_to_picard MarkDuplicates INPUT=sample_${SLURM_ARRAY_TASK_ID}.FM.bam OUTPUT=sample_${SLURM_ARRAY_TASK_ID}.MD.bam M=sample_${SLURM_ARRAY_TASK_ID}.metrics_file VALIDATION_STRINGENCY=SILENT REMOVE_DUPLICATES=true TMP_DIR=$temp
 
 #Read Groups 
 java -Xmx14g -jar $path_to_picard AddOrReplaceReadGroups RGLB=sample_${SLURM_ARRAY_TASK_ID}.MD.bam RGPL=illumina RGPU=run RGSM=sample_${SLURM_ARRAY_TASK_ID} I=sample_${SLURM_ARRAY_TASK_ID}.MD.bam O=sample_${SLURM_ARRAY_TASK_ID}.RG.bam SORT_ORDER=coordinate CREATE_INDEX=TRUE VALIDATION_STRINGENCY=SILENT TMP_DIR=$temp
