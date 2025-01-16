@@ -1,0 +1,1 @@
+This code takes pooled read data from evolved populations of Mimulus guttatus and processes it from raw fastq files to filtered VCFs using standard bioinformatic tools including bwa, bcftools, picard tools, gatk, bedtools and VCFtools. The files are processed as a SLURM array job. 
