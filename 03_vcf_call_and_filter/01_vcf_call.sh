@@ -1,7 +1,7 @@
 ls *.RG.bam > bamlist.txt
 
 module load bcftools
-genome="/datacommons/willislab/Mguttatus_genome_5/MguttatusTOL_551_v5.0.fa"
+genome="/hpc/home/ahl28/Mguttatus_genome_5/MguttatusTOL_551_v5.0.fa"
 for f in 01 02 03 04 05 06 07 08 09 10 11 12 13 14
 do 
 	echo '#!/bin/bash' > chr_$f.sh
