@@ -10,7 +10,7 @@ if len(sys.argv) != 2:
 input_file = sys.argv[1]
 
 # Load the data
-df = pd.read_csv(input_file)
+df = pd.read_csv(input_file, sep="\t")
 
 
 # Define the unwanted genotypes
