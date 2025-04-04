@@ -1,0 +1,36 @@
+import pandas as pd
+import sys
+
+# Ensure correct usage
+if len(sys.argv) != 2:
+    print("Usage: python script.py <input_file>")
+    sys.exit(1)
+
+# Get the input file from command-line argument
+input_file = sys.argv[1]
+
+# Load the data
+df = pd.read_csv(input_file)
+
+
+# Define the unwanted genotypes
+excluded_genotypes = {"./.","0/1", "1/2", "2/3"}
+
+# Apply parental filtering
+filtered_df = df[
+    (df["SOD"] != df["sample_2"]) &  # SOD and REM_2023 must not be the same
+    (~df["SOD"].isin(excluded_genotypes)) &  # SOD must not be in excluded genotypes
+    (~df["sample_2"].isin(excluded_genotypes))  # REM_2023 must not be in excluded genotypes
+    (df["sample_99"] == "0/1") &  # sample_99 must be 0/1
+    (df["pool_F1"] == "0/1")  # pool_F1 must be 0/1
+]
+
+# Get sites where SOD is "0/0"
+sod_ref_sites = filtered_df[filtered_df["SOD"] == "0/0"]
+
+# Get sites where REM_2023 is "0/0"
+rem_ref_sites = filtered_df[filtered_df["sample_2"] == "0/0"]
+
+# Save to files
+sod_ref_sites.to_csv("SOD_ref.txt", index=False, sep="\t") 
+rem_ref_sites.to_csv("REM_ref.txt", index=False, sep="\t")
